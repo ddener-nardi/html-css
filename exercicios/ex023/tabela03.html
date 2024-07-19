@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            width: 500px;
+            height: 150px;
+            border-collapse: collapse;
+            background-color: aqua;
+            box-shadow: 4px 3px 0;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        th{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dener</td>
+                <td>18979713651</td>
+                <td>Pres. Prudente</td>
+                <td class="estado" rowspan="3"><abbr title="todos moram no estado de São Paulo">SP</abbr></td>
+            </tr>
+            <tr>
+                <td>Outronome</td>
+                <td colspan="2">Sem numero, cidade e estado</td>
+            </tr>
+            <tr>
+                <td colspan="3">Não identificado</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
