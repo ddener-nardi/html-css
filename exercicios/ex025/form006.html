@@ -6,7 +6,25 @@
     <title>Formulários</title>
 </head>
 <body>
-    
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="Cor" id="icor" value="#0fc23e">
+        </p>
+        <p>
+            <label for="inivel">Nivel de satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="Foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
 
 </body>
 </html>
